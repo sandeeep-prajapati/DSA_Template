@@ -1,6 +1,6 @@
 
 ```go
-// 🟦 1. Array Utilities
+// 1. Array Utilities
 package main
 
 // Reverse an array
@@ -70,7 +70,7 @@ func isSorted(arr []int) bool {
     return true
 }
 
-// 🟦 2. String Utilities
+// 2. String Utilities
 // Reverse a string
 func reverseString(s string) string {
     runes := []rune(s)
@@ -126,7 +126,7 @@ func firstNonRepeating(s string) rune {
     return 0
 }
 
-// 🟦 3. Searching Algorithms
+// 3. Searching Algorithms
 // Linear search
 func linearSearch(arr []int, target int) int {
     for i, v := range arr {
@@ -200,7 +200,7 @@ func countOccurrences(arr []int, target int) int {
     return last - first + 1
 }
 
-// 🟦 4. Sorting Helpers
+// 4. Sorting Helpers
 // Custom sort using key
 type Sortable struct {
     Value int
@@ -284,7 +284,7 @@ func kthSmallest(arr []int, k int) int {
     return arr[k-1]
 }
 
-// 🟦 5. Two Pointers Patterns
+// 5. Two Pointers Patterns
 // Pair sum in sorted array
 func pairSumSorted(arr []int, target int) [][]int {
     result := [][]int{}
@@ -400,7 +400,7 @@ func isPalindromeAlphaNum(s string) bool {
     return true
 }
 
-// 🟦 6. Sliding Window Patterns
+// 6. Sliding Window Patterns
 // Maximum sum subarray of size k
 func maxSumSubarray(arr []int, k int) int {
     if len(arr) < k {
@@ -525,7 +525,7 @@ func minWindow(s, t string) string {
     return s[minStart : minStart+minLen]
 }
 
-// 🟦 7. Hashing / Dictionary Usage
+// 7. Hashing / Dictionary Usage
 // Two sum
 func twoSum(nums []int, target int) []int {
     seen := make(map[int]int)
@@ -605,7 +605,7 @@ func findDuplicates(nums []int) []int {
     return duplicates
 }
 
-// 🟦 8. Stack Utilities
+// 8. Stack Utilities
 type Stack []int
 
 func (s *Stack) Push(x int) {
@@ -740,7 +740,7 @@ func removeAdjacentDuplicates(s string) string {
     return string(stack)
 }
 
-// 🟦 9. Queue & Deque
+// 9. Queue & Deque
 // Simple queue implementation
 type Queue []int
 
@@ -868,7 +868,7 @@ func generateBinaryNumbers(n int) []string {
     return result
 }
 
-// 🟦 10. Recursion Basics
+// 10. Recursion Basics
 // Factorial
 func factorial(n int) int {
     if n <= 1 {
@@ -904,7 +904,7 @@ func power(x float64, n int) float64 {
     return x * power(x, n-1)
 }
 
-// 🟦 11. Backtracking Patterns
+// 11. Backtracking Patterns
 // Generate subsets
 func subsets(nums []int) [][]int {
     result := [][]int{}
@@ -971,7 +971,7 @@ func backtrackCombinationSum(candidates []int, target, start int, current []int,
     }
 }
 
-// 🟦 12. Binary Search Patterns
+// 12. Binary Search Patterns
 // Lower bound
 func lowerBound(arr []int, target int) int {
     left, right := 0, len(arr)-1
@@ -1058,7 +1058,7 @@ func findMinRotated(nums []int) int {
     return nums[left]
 }
 
-// 🟦 13. Heap / Priority Queue
+// 13. Heap / Priority Queue
 // Simple max heap implementation
 type MaxHeap []int
 
@@ -1115,7 +1115,7 @@ func topKFrequent(nums []int, k int) []int {
     return result
 }
 
-// 🟦 14. Linked List Utilities
+// 14. Linked List Utilities
 type ListNode struct {
     Val  int
     Next *ListNode
@@ -1209,7 +1209,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
     return dummy.Next
 }
 
-// 🟦 15. Tree Traversals
+// 15. Tree Traversals
 type TreeNode struct {
     Val   int
     Left  *TreeNode
@@ -1307,7 +1307,7 @@ func treeHeight(root *TreeNode) int {
     return rightHeight + 1
 }
 
-// 🟦 16. Graph Algorithms
+// 16. Graph Algorithms
 // Graph representation
 type Graph struct {
     vertices int
@@ -1462,7 +1462,7 @@ func shortestPathUnweighted(graph *Graph, start, end int) []int {
     return nil
 }
 
-// 🟦 17. Dynamic Programming (1D)
+// 17. Dynamic Programming (1D)
 // Fibonacci with memoization
 func fibMemo(n int, memo map[int]int) int {
     if n <= 1 {
@@ -1557,7 +1557,7 @@ func min(a, b int) int {
     return b
 }
 
-// 🟦 18. Dynamic Programming (2D)
+// 18. Dynamic Programming (2D)
 // Longest common subsequence
 func longestCommonSubsequence(text1, text2 string) int {
     m, n := len(text1), len(text2)
@@ -1664,7 +1664,7 @@ func knapsack01(weights, values []int, capacity int) int {
     return dp[n][capacity]
 }
 
-// 🟦 19. Bit Manipulation
+// 19. Bit Manipulation
 // Check if number is power of two
 func isPowerOfTwo(n int) bool {
     return n > 0 && (n&(n-1)) == 0
@@ -1712,7 +1712,7 @@ func subsetsBitmask(nums []int) [][]int {
     return result
 }
 
-// 🟦 20. Math & Number Theory
+// 20. Math & Number Theory
 // GCD and LCM
 func gcd(a, b int) int {
     for b != 0 {
